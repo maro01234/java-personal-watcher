@@ -1,0 +1,13 @@
+html { --lumo-primary-color: #146c5b; --lumo-primary-text-color: #126351; --lumo-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif; --lumo-border-radius-m: 10px; background: #f5f6f2; }
+body { margin: 0; color: #213c36; }
+.workspace { max-width: 1280px; margin: auto; padding: 48px 32px; gap: 18px; }
+h1 { font-size: clamp(28px, 4vw, 44px); letter-spacing: -.035em; margin: 0; }
+h2 { font-size: 20px; margin: 0; }
+p { margin: 0; line-height: 1.8; }
+.eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .16em; color: #146c5b; }
+.muted { color: #62716b; font-size: 13px; }
+.stats { width: 100%; flex-wrap: wrap; }
+.stats > span { background: #e5eee6; border: 1px solid #d0e1d5; padding: 15px 24px; border-radius: 12px; font-weight: 600; }
+.panel { background: white; border: 1px solid #dfe5df; border-radius: 16px; padding: 24px; }
+vaadin-grid { background: white; border: 1px solid #dfe5df; border-radius: 12px; }
+@media (max-width: 650px) { .workspace { padding: 26px 14px; } .panel { padding: 16px; } }

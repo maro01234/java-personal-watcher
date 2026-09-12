@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: java-personal-watcher
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /healthz
+    envVars:
+      - key: WATCHER_AUTH_REQUIRED
+        value: "true"
+      - key: WATCHER_AUTH_PASSWORD
+        generateValue: true
